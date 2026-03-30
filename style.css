@@ -347,7 +347,9 @@ width: 50%;
 /* ========================================================================== */
 
 .section-wrap {
-  padding: 100px 48px;
+  display: flex;
+  justify-content: center;
+  width: 80%;
 }
 
 .section-label {
@@ -390,12 +392,18 @@ width: 50%;
 /* ========================================================================== */
 /* 5. About Section                                                           */
 /* ========================================================================== */
+#about {
+  display: flex;
+  justify-content: center; 
+  min-height: 600px;
+  padding: 100px 0;
+}
 
-#about .about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
+#about .about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
 }
 
 .about-text p {
@@ -411,9 +419,13 @@ width: 50%;
 
 .about-stats {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template: 1fr/ 1fr 1fr;
   gap: 20px;
   margin-top: 40px;
+}
+
+.about-stats .build {
+  grid-column: 1 / -1;
 }
 
 .stat-card {
@@ -448,6 +460,7 @@ width: 50%;
   align-items: center;
   justify-content: center;
   min-height: 400px;
+  width: 50%;
 }
 
 .about-logo-wrap {
@@ -887,9 +900,17 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .about-visual {
-    display: none;
+  .section-wrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
   }
+
+
+
+  /* .about-visual {
+    display: none;
+  } */
 
   .hero {
     flex-direction: column;
@@ -923,7 +944,9 @@ footer {
   top: 110%;
   left: 0;
   width: 100%;
-  background-color: var(--navy);
+  background-color: rgba(13, 27, 42, 0.88);
+  backdrop-filter: blur(14px);
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -964,6 +987,11 @@ footer {
   gap: 15px;
   text-align: center; /* Centers the text for mobile */
 }
+
+#about .about-content {
+  width: 100%;
+  align-items: center;
+  text-align: center;
 
 }
 
