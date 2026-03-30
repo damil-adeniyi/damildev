@@ -19,12 +19,12 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg" id="nav">
+  <!-- <nav class="navbar navbar-expand-lg" id="nav">
   <div class="container-fluid nav-logo">
-    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <a class="navbar-brand" href="#">Navbar</a>
     <img src="img/logo.png"  alt="Damildev logo" onerror="this.style.display='none'"/>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class=""></span>
     </button>
   </div>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -36,21 +36,40 @@
       </div>
     </div>
   
-</nav>
-
-<!-- <nav id="nav">
-  <div class="nav-logo">
-    <img src="img/logo.png" alt="Damildev logo" onerror="this.style.display='none'"/>
-    <span class="nav-brand">Damildev</span>
-  </div>
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </div>
-  <a href="#contact" class="nav-cta">Let's Work</a>
 </nav> -->
+
+<nav >
+
+  <div class="nav">
+    <div class="nav-logo">
+    <a href="#hero"><img src="img/logo.png" alt="Damildev logo" onerror="this.style.display='none'"/></a>
+  </div>
+
+   <!-- Hidden Checkbox for Toggle Logic -->
+    <input type="checkbox" id="nav-check">
+    
+    <!-- Animated Hamburger Button -->
+    <label for="nav-check" class="nav-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+  <div class="nav-links">
+    <div class="nav-link">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+    </div>
+    <div class="nav-c">
+      <a href="#contact" class="nav-cta">Let's Work</a>
+    </div>
+    
+  </div>
+  </div>
+  
+  
+</nav>
 
 <section id="hero">
   <div class="hero-glow"></div>
