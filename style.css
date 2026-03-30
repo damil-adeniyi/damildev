@@ -1001,6 +1001,7 @@ footer {
 
   .section-wrap {
     flex-direction: column;
+    width: 100%;
     align-items: center;
     gap: 24px;
   }
@@ -1022,6 +1023,15 @@ footer {
   width: 100%;
 
   }
+
+  .form-label {
+  width: 100%;
+}
+
+
+.contact-inner {
+  width: 100%;
+}
 
   .nav {
   display: flex;
@@ -1119,16 +1129,6 @@ footer {
 }
 
 @media (max-width: 760px) {
-  /* nav {
-    padding: 14px 24px;
-  }
-
-  .nav-links {
-    display: none;
-  } */
-
-
-
   .form-row {
     grid-template-columns: 1fr;
   }
