@@ -539,7 +539,18 @@ width: 50%;
 /* ========================================================================== */
 
 #skills {
+  padding: 50px;
+  min-height: 400px;
   background: var(--navy2);
+  display: flex;
+  justify-content: center;
+}
+
+.skills-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills-grid {
@@ -554,7 +565,7 @@ width: 50%;
   gap: 10px;
   background: var(--navy3);
   border: 1px solid var(--border);
-  padding: 12px 22px;
+  padding: 10px 22px;
   border-radius: 40px;
   font-size: 14px;
   font-weight: 500;
