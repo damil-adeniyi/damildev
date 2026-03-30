@@ -50,8 +50,9 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: var(--coral);
-  color: #fff;
+  /* background: var(--coral); */
+  background: rgba(145, 18, 18, 0.58);
+  backdrop-filter: blur(14px);
   padding: 0px 14px;
   padding-top: 5px;
   border-radius: 50%;
