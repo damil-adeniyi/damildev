@@ -227,16 +227,21 @@ nav img {
 }
 
 .hero-img {
-width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+
 
 }
 
 .hero-img img {
   width: 100%;
-  height: auto;
+  height: 600px;
+  /* height: auto; */
   border-radius: 50px;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
 }
 
 .hero-tag {
