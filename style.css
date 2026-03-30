@@ -72,7 +72,7 @@ nav {
   background: rgba(13, 27, 42, 0.88);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
-  width: 80%;
+  width: 90%;
   border-radius: 50px;
 }
 
@@ -186,7 +186,7 @@ nav img {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 80%;
+  width: 90%;
 }
 
 .hero-glow {
@@ -349,7 +349,7 @@ width: 50%;
 .section-wrap {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 90%;
 }
 
 .section-label {
@@ -935,8 +935,13 @@ footer {
 
 .nav-btn {
   display: inline-block;
+  color: var(--text);
   z-index: 10;
   cursor: pointer; /* Ensures the user knows it's clickable */
+}
+
+.nav-btn span{
+  background-color: var(--text);
 }
 
 .nav-links {
@@ -992,6 +997,7 @@ footer {
   width: 100%;
   align-items: center;
   text-align: center;
+}
 
 }
 
