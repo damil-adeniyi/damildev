@@ -1009,6 +1009,10 @@ footer {
     display: none;
   }
 
+  .about-text {
+  max-width: 100%;
+  }
+
   .hero {
     flex-direction: column;
     gap: 40px;
