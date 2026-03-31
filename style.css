@@ -1188,14 +1188,7 @@ footer {
 }
 
 .projects-swiper {
-  width: 90%;
-  padding: 30px;
-  background-color: #0D1B2A;
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 15px;
 }
 
 .projects-grids {
