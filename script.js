@@ -87,3 +87,56 @@ var swiper = new Swiper(".projects-grids-swiper", {
           },
         },
       });
+
+// nav link active state on scroll
+// 1. Target every link inside the .nav-links wrapper
+const navLinks = document.querySelectorAll(".nav-links a");
+const sections = document.querySelectorAll("section");
+
+const observerOptions = {
+  root: null,
+  threshold: 0.6 // Change to 0.6 if you have very long sections
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const id = entry.target.getAttribute("id");
+
+      navLinks.forEach((link) => {
+        // 2. Remove active class from ALL links in .nav-links
+        link.classList.remove("active");
+        
+        // 3. Match the href (e.g., "#about") to the section ID
+        if (link.getAttribute("href") === `#${id}`) {
+          link.classList.add("active");
+        }
+      });
+    }
+  });
+}, observerOptions);
+
+sections.forEach((section) => observer.observe(section));
+
+
+
+
+// back to top button
+const backToTopBtn = document.querySelector('.back-to-top');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 700) {
+    backToTopBtn.style.display = 'flex';
+    backToTopBtn.style.opacity = '0.7';
+    backToTopBtn.style.transition = '0.5s';
+  } else {
+    backToTopBtn.style.display = 'none';
+    backToTopBtn.style.opacity = '0';
+  }
+});
+
+backToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
