@@ -101,7 +101,7 @@ nav {
   display: flex;
   align-items: center;
   /* gap: 12px; */
-  width: 30%;
+  width: 20%;
 }
 
 nav img {
@@ -123,14 +123,14 @@ nav img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 70%;
+  width: 80%;
 }
 
 .nav-link {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 50%;
+  width: 70%;
   gap: 16px;
 }
 
@@ -866,11 +866,245 @@ nav img {
 }
 
 /* ========================================================================== */
+/* 8. Testimonial Section                                                        */
+/* ========================================================================== */
+#testis {
+  padding: 50px;
+  min-height: 600px;
+  background: var(--navy);
+  display: flex;
+  justify-content: center;
+}
+
+.testis-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testis-swiper {
+  width: 80%;
+  padding: 10px;
+  background-color: #0D1B2A;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testis-grids-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testis-grids-swiper {
+  width: 100%;
+}
+
+.testis-grids {
+  width: 100%;
+  display: flex;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: var(--coral);
+  transition: color 0.2s;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  color: var(--coral2);
+}
+
+.swiper-pagination-bullet {
+  background: var(--coral);
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+
+.testi-card {
+  /* max-width: 450px; */
+  height: 500px;
+  background: var(--navy2);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: border-color 0.25s, transform 0.25s;
+  display: flex;
+  flex-direction: column;
+}
+
+.testis-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--coral);
+  margin-bottom: 16px;
+}
+
+.testis-title {
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.testis-desc {
+  color: var(--muted);
+  font-size: 16px;
+  max-width: 520px;
+  margin-bottom: 60px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.testi-card:hover {
+  border-color: var(--coral);
+  transform: translateY(-6px);
+}
+
+.testi-thumb {
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy3);
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.testi-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.testi-card:hover .testi-thumb img {
+  transform: scale(1.04);
+}
+
+.testi-thumb::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 55%, rgba(13, 27, 42, 0.55) 100%);
+  pointer-events: none;
+}
+
+.testi-num {
+  font-family: 'DM Mono', monospace;
+  z-index: 2;
+  font-size: 64px;
+  font-weight: 500;
+  color: rgba(232, 112, 90, 0.12);
+  line-height: 1;
+}
+
+.testi-label {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  background: rgba(13, 27, 42, 0.58);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(14px);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--coral);
+}
+
+.testi-body {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.testi-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.testi-desc {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  flex: 1;
+}
+
+.testi-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.testi-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.testi-tag {
+  background: var(--navy3);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.testi-link {
+  color: var(--navy);
+  padding: 3px 10px;
+  border-radius: 4px;
+  background: var(--coral);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+.testi-link:hover {
+  opacity: 0.7;
+}
+
+/* ========================================================================== */
 /* 8. Contact Section                                                         */
 /* ========================================================================== */
 
 #contact {
-  background: var(--navy2);
+  background: var(--navy);
   padding: 50px 0px;
   min-height: 600px;
   display: flex;
@@ -1192,6 +1426,15 @@ footer {
 }
 
 .projects-grids {
+  width: 100%;
+  display: flex;
+}
+
+.testis-swiper {
+  width: 100%;
+}
+
+.testis-grids {
   width: 100%;
   display: flex;
 }
