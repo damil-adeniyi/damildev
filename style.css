@@ -652,7 +652,7 @@ nav img {
 
 .projects-swiper {
   width: 80%;
-  padding: 50px;
+  padding: 10px;
   background-color: #0D1B2A;
   border: 1px solid var(--border);
   border-radius: 20px;
@@ -1189,7 +1189,6 @@ footer {
 
 .projects-swiper {
   width: 100%;
-  padding: 15px;
 }
 
 .projects-grids {
