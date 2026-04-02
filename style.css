@@ -212,7 +212,8 @@ nav img {
 #hero {
   /* min-height: 900px; */
   min-height: 900px;
-  padding: 100px 0;
+  padding-top: 140px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1492,10 +1493,6 @@ footer {
     gap: 16px;
     text-align: center;
     padding: 24px;
-  }
-
-  .hero-scroll {
-    display: none;
   }
 
   .projects-grids {
