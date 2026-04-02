@@ -200,11 +200,13 @@ nav img {
 /* ========================================================================== */
 
 #hero {
+  /* min-height: 900px; */
   min-height: 900px;
+  padding: 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 140px;
+  /* padding-top: 140px; */
   /* position: relative; */
   /* overflow: hidden; */
 }
@@ -376,7 +378,7 @@ nav img {
 }
 
 /* ========================================================================== */
-/* 4. Section Headings                                                        */
+/* 4. Section Headings and Marquee                                                        */
 /* ========================================================================== */
 
 .section-wrap {
@@ -397,14 +399,6 @@ nav img {
   margin-bottom: 16px;
 }
 
-/* .section-label::after {
-  content: '';
-  flex: 0 0 40px;
-  height: 1px;
-  background: var(--coral);
-  opacity: 0.5;
-} */
-
 .section-title {
   font-size: clamp(28px, 4vw, 48px);
   font-weight: 700;
@@ -421,6 +415,53 @@ nav img {
   margin-bottom: 60px;
   line-height: 1.7;
 }
+
+.about-marquee {
+  overflow: hidden; /* Hides the cards outside the view */
+  width: 100%;
+  background: var(--navy2);
+  padding: 30px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.projects-marquee {
+  overflow: hidden; /* Hides the cards outside the view */
+  width: 100%;
+  background: var(--navy);
+  padding: 30px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content; /* Ensures track is as wide as all cards combined */
+  animation: scroll 15s linear infinite; /* Adjust time for speed */
+}
+
+.marquee-track:hover {
+  animation-play-state: paused; /* Optional: pause on hover for readability */
+}
+
+.stat-num-marq {
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  width: 500px;
+  margin: 0 40px;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--coral);
+  line-height: 1;
+  border-radius: 8px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Move by half because we duplicated the set */
+}
+
 
 /* ========================================================================== */
 /* 5. About Section                                                           */
@@ -635,7 +676,6 @@ nav img {
 /* ========================================================================== */
 #projects {
   padding: 50px;
-  padding-top: 0;
   min-height: 600px;
   background: var(--navy2);
   display: flex;
