@@ -110,6 +110,7 @@ chatBtn.addEventListener('click', () => {
 const modeToggle = document.querySelector('.mode-toggle');
 const modeimg = document.querySelector('.mode-img');
 const body = document.body;
+const heroImg = document.querySelector('.hero-profile');
 modeToggle.addEventListener('click', () => {
   body.classList.toggle('light-mode');
 
@@ -117,6 +118,12 @@ modeToggle.addEventListener('click', () => {
         modeimg.src = 'img/sun.png';
     } else {
         modeimg.src = 'img/moon.png';
+    }
+
+  if (heroImg.getAttribute('src') === 'img/hero.jpg') {
+        heroImg.src = 'img/hero2.jpg';
+    } else {
+        heroImg.src = 'img/hero.jpg';
     }
 
 });
