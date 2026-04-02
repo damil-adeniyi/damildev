@@ -1091,12 +1091,12 @@ nav img {
 .testi-details {
   display: flex;
   align-items: center;
-  /* gap: 10px; */
+  gap: 10px;
 }
 
 .testi-stars {
   backdrop-filter: blur(14px);
-  padding: 4px 12px;
+  /* padding: 4px 12px; */
   border-radius: 20px;
   font-family: 'DM Mono', monospace;
   font-size: 20px;
