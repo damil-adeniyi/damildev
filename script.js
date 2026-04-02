@@ -105,3 +105,18 @@ chatBtn.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+
+// light mode toggle
+const modeToggle = document.querySelector('.mode-toggle');
+const modeimg = document.querySelector('.mode-img');
+const body = document.body;
+modeToggle.addEventListener('click', () => {
+  body.classList.toggle('light-mode');
+
+  if (modeimg.getAttribute('src') === 'img/moon.png') {
+        modeimg.src = 'img/sun.png';
+    } else {
+        modeimg.src = 'img/moon.png';
+    }
+
+});

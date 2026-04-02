@@ -32,6 +32,18 @@ body {
   overflow-x: hidden;
 }
 
+.light-mode {
+  --navy: #e8e4dc;
+  --navy2: #f0eee9;
+  --navy3: #f5f3f1;
+  --coral: #E8705A;
+  --coral2: #f28472;
+  --text: #0D1B2A;
+  --muted: #162940;
+  --border: rgba(232, 112, 90, 0.18);
+  --grid: rgba(232, 112, 90, 0.06);
+}
+
 /* ========================================================================== */
 /* 2. Navigation                                                              */
 /* ========================================================================== */
@@ -99,20 +111,48 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 48px;
+  padding: 20px 40px;
   background: rgba(13, 27, 42, 0.58);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
-  width: 90%;
+  width: 95%;
   border-radius: 50px;
 }
 
 .nav-logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   /* gap: 12px; */
   width: 20%;
 }
+
+.mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 12px; */
+  width: 20%;
+}
+
+.mode-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding-top: 10px;
+  background-color: var(--navy2);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mode img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
 
 nav img {
   width: 50px;
@@ -133,7 +173,7 @@ nav img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 60%;
 }
 
 .nav-link {
@@ -703,7 +743,7 @@ nav img {
 .projects-swiper {
   width: 80%;
   padding: 10px;
-  background-color: #0D1B2A;
+  background-color: var(--navy);
   border: 1px solid var(--border);
   border-radius: 20px;
   display: flex;
@@ -1044,7 +1084,7 @@ nav img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 45%;
+  width: 50%;
 }
 
 .testi-stars {
