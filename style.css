@@ -1091,8 +1091,7 @@ nav img {
 .testi-details {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 50%;
+  /* gap: 10px; */
 }
 
 .testi-stars {
@@ -1100,7 +1099,7 @@ nav img {
   padding: 4px 12px;
   border-radius: 20px;
   font-family: 'DM Mono', monospace;
-  font-size: 18px;
+  font-size: 20px;
   color: var(--coral);
 }
 
