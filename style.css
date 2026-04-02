@@ -1024,10 +1024,10 @@ nav img {
   text-align: center;
 }
 
-.testi-card:hover {
+/* .testi-card:hover {
   border-color: var(--coral);
   transform: translateY(-6px);
-}
+} */
 
 .testi-thumb {
   height: 20%;
