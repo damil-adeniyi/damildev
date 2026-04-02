@@ -66,8 +66,6 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach((section) => observer.observe(section));
 
 
-
-
 // back to top button
 const backToTopBtn = document.querySelector('.back-to-top');
 window.addEventListener('scroll', () => {
@@ -82,6 +80,26 @@ window.addEventListener('scroll', () => {
 });
 
 backToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+// chat button
+const chatBtn = document.querySelector('.chat-btn');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 700) {
+    chatBtn.style.display = 'flex';
+    chatBtn.style.opacity = '0.7';
+    chatBtn.style.transition = '0.5s';
+  } else {
+    chatBtn.style.display = 'none';
+    chatBtn.style.opacity = '0';
+  }
+});
+
+chatBtn.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
