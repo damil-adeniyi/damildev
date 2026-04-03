@@ -174,7 +174,7 @@ nav img {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: var(--text);
 }
 
 .nav-links {
@@ -215,7 +215,7 @@ nav img {
 
 .nav-cta {
   background: var(--coral);
-  color: #fff;
+  color: var(--text);
   border: none;
   padding: 9px 22px;
   border-radius: 6px;
