@@ -36,6 +36,10 @@ var swiper = new Swiper(".projects-grids-swiper", {
             slidesPerView: 3,
             spaceBetween: 25,
           },
+          1480: {
+            slidesPerView: 4,
+            spaceBetween: 25,
+          },
         },
       });
 
@@ -50,15 +54,6 @@ var swiper = new Swiper(".testis-grids-swiper", {
         delay: 5000,
         disableOnInteraction: false,
         },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          dynamicBullets: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
         breakpoints: {
           0: {
             slidesPerView: 1,
@@ -70,6 +65,10 @@ var swiper = new Swiper(".testis-grids-swiper", {
           },
           1024: {
             slidesPerView: 3,
+            spaceBetween: 25,
+          },
+          1480: {
+            slidesPerView: 4,
             spaceBetween: 25,
           },
         },
