@@ -10,6 +10,10 @@ var swiper = new Swiper(".projects-grids-swiper", {
         grabCursor: "true",
         // slidePerGroup: 3,
         // loop: true,
+        autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
