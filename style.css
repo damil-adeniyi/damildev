@@ -752,7 +752,7 @@ nav img {
 /* 7. Projects Section                                                        */
 /* ========================================================================== */
 #projects {
-  padding: 50px;
+  padding: 50px 0px;
   min-height: 600px;
   background: var(--navy2);
   display: flex;
