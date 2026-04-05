@@ -1432,6 +1432,10 @@ footer {
   position: relative;
 }
 
+.nav {
+  width: 90%;
+}
+
 .nav-btn {
   display: inline-block;
   color: var(--text);
@@ -1503,7 +1507,7 @@ footer {
 }
 
 .projects-swiper {
-  width: 100%;
+  width: 80%;
 }
 
 .projects-grids {
