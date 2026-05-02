@@ -698,7 +698,7 @@ nav img {
 /* ========================================================================== */
 
 #skills {
-  padding: 50px;
+  padding: 100px 0;
   min-height: 600px;
   background: var(--navy2);
   display: flex;
@@ -710,7 +710,8 @@ nav img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  width: 80%;
 }
 
 .skills-grid {
