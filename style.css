@@ -1542,6 +1542,10 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .hero-sub {
+    max-width: 100%;
+}
+
   footer {
     flex-direction: column;
     gap: 16px;
@@ -1552,6 +1556,10 @@ footer {
   .projects-grids {
   width: 100%;
   display: flex;
+}
+
+.stat-num {
+    font-size: 28px;
 }
 
 .contact-img img{
