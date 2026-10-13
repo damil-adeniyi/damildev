@@ -138,12 +138,12 @@ window.addEventListener('scroll', () => {
   }
 });
 
-chatBtn.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
+// chatBtn.addEventListener('click', () => {
+//   window.scrollTo({
+//     top: 0,
+//     behavior: 'smooth'
+//   });
+// });
 
 // light mode toggle
 const modeToggle = document.querySelector('.mode-toggle');
